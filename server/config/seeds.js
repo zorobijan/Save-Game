@@ -153,3 +153,127 @@ db.once('open', async () => {
 
   process.exit();
 });
+
+const products = await Product.insertMany([
+
+  {
+    "availability": "OnlineOnly",
+    "currency": "USD",
+    "currentLowestPrice": 20.84,
+    "id": "minecraft",
+    "name": "Minecraft",
+    "releaseDate": "2009-05-17",
+    "stores": [
+      {
+        "price": 20.84,
+        "seller": "GAMIVO",
+        "url": "https://www.gamivo.com/product/minecraft-java-edition"
+      },
+      {
+        "price": 22.19,
+        "seller": "CDKeys.com",
+        "url": "https://www.cdkeys.com/minecraft-pc-cd-key"
+      },
+      {
+        "price": 23.86,
+        "seller": "GAMIVO",
+        "url": "https://www.gamivo.com/product/minecraft-java-bedrock-edition-xbox-pc-global-xboxwindows-en-bedrock"
+      },
+      {
+        "price": 23.95,
+        "seller": "Kinguin",
+        "url": "https://www.kinguin.net/category/5329/minecraft-global-cd-key"
+      },
+      {
+        "price": 23.95,
+        "seller": "G2Play",
+        "url": "https://www.g2play.net/category/5329/minecraft-global-cd-key"
+      },
+      {
+        "price": 24.57,
+        "seller": "Eneba",
+        "url": "https://www.eneba.com/other-minecraft-java-bedrock-edition-official-website-key-global"
+      },
+      {
+        "price": 24.99,
+        "seller": "G2A",
+        "url": "https://www.g2a.com/minecraft-java-edition-minecraft-key-global-i10000068122012"
+      },
+      {
+        "price": 25.03,
+        "seller": "Instant Gaming",
+        "url": "https://www.instant-gaming.com/en/442-/"
+      },
+      {
+        "price": 25.19,
+        "seller": "Eneba",
+        "url": "https://www.eneba.com/other-minecraft-official-website-key-global"
+      },
+      {
+        "price": 25.72,
+        "seller": "K4G.com",
+        "url": "https://k4g.com/product/minecraft-minecraft-global-java-bedrock-edition-cd-key-CFA581CA"
+      },
+      {
+        "price": 26.35,
+        "seller": "Kinguin",
+        "url": "https://www.kinguin.net/category/127386/minecraft-java-bedrock-edition-for-pc-windows-10-cd-key"
+      },
+      {
+        "price": 26.35,
+        "seller": "G2Play",
+        "url": "https://www.g2play.net/category/127386/minecraft-java-bedrock-edition-for-pc-windows-10-cd-key"
+      },
+      {
+        "price": 26.95,
+        "seller": "Minecraft.net",
+        "url": "https://www.minecraft.net/store/minecraft-java-edition"
+      },
+      {
+        "price": 28.06,
+        "seller": "K4G.com",
+        "url": "https://k4g.com/product/minecraft-java-edition-minecraft-global-cd-key-18E72850"
+      },
+      {
+        "price": 28.26,
+        "seller": "HRK Game",
+        "url": "https://www.hrkgame.com/en/randomkeyshop/set_currency/"
+      },
+      {
+        "price": 28.72,
+        "seller": "Eneba",
+        "url": "https://www.eneba.com/other-minecraft-java-bedrock-edition-official-website-key-united-states"
+      },
+      {
+        "price": 28.81,
+        "seller": "K4G.com",
+        "url": "https://k4g.com/product/minecraft-minecraft-global-cd-key-269E0B00"
+      },
+      {
+        "price": 29.99,
+        "seller": "Newegg",
+        "url": "https://click.linksynergy.com/deeplink"
+      },
+      {
+        "price": 29.99,
+        "seller": "Microsoft Store",
+        "url": "https://click.linksynergy.com/deeplink"
+      },
+      {
+        "price": 29.99,
+        "seller": "Amazon.com",
+        "url": "https://www.amazon.com/gp/product/B09ZY21PM4"
+      },
+      {
+        "price": 30.04,
+        "seller": "Eneba",
+        "url": "https://www.eneba.com/other-minecraft-java-edition-official-website-key-united-states-2"
+      },
+      {
+        "price": 31.52,
+        "seller": "G2A",
+        "url": "https://www.g2a.com/minecraft-java-bedrock-edition-pc-microsoft-store-key-global-i10000326476001"
+      }
+    ],
+    "type": "game"
+  }])
