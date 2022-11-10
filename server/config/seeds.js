@@ -1,16 +1,16 @@
 const db = require('./connection');
-const { User, Product } = require('../models');
+const { User, Product, Category } = require('../models');
 
 db.once('open', async () => {
-  // await Category.deleteMany();
+  await Category.deleteMany();
 
-  // const categories = await Category.insertMany([
-  //   { name: 'Food' },
-  //   { name: 'Household Supplies' },
-  //   { name: 'Electronics' },
-  //   { name: 'Books' },
-  //   { name: 'Toys' }
-  // ]);
+  const categories = await Category.insertMany([
+    { name: 'Adventure' },
+    { name: 'Racing' },
+    { name: 'FPS' },
+    { name: 'RPG' },
+    { name: 'Survival Horror' }
+  ]);
 
   console.log('categories seeded');
 
@@ -21,6 +21,7 @@ db.once('open', async () => {
         "currency": "USD",
         "currentLowestPrice": 20.84,
         "name": "Minecraft",
+        category: categories[4]._id,
         "releaseDate": "2009-05-17",
         "stores": [
           {
@@ -56,6 +57,7 @@ db.once('open', async () => {
         "currency": "USD",
         "currentLowestPrice": 25.64,
         "name": "God of War",
+        category: categories[0]._id,
         "releaseDate": "2022-01-14",
         "stores": [
           {
@@ -91,6 +93,7 @@ db.once('open', async () => {
         "currency": "USD",
         "currentLowestPrice": 9.99,
         "name": "METAL GEAR SOLID",
+        category: categories[0]._id,
         "releaseDate": "2000-09-25",
         "stores": [
           {
@@ -106,6 +109,7 @@ db.once('open', async () => {
         "currency": "USD",
         "currentLowestPrice": 19.99,
         "name": "Call of Duty",
+        category: categories[2]._id,
         "releaseDate": "2003-10-29",
         "stores": [
           {
@@ -141,6 +145,7 @@ db.once('open', async () => {
         "currency": "USD",
         "currentLowestPrice": 19.99,
         "name": "Need for Speed",
+        category: categories[1]._id,
         "releaseDate": "2016-03-15",
         "stores": [
           {
@@ -176,6 +181,7 @@ db.once('open', async () => {
         "currency": "USD",
         "currentLowestPrice": 7.45,
         "name": "Medal of Honor",
+        category: categories[2]._id,
         "releaseDate": "2010-10-13",
         "stores": [
           {
@@ -211,6 +217,7 @@ db.once('open', async () => {
         "currency": "USD",
         "currentLowestPrice": 99.08,
         "name": "Grand Theft Auto",
+        category: categories[0]._id,
         "releaseDate": "1998-06-30",
         "stores": [
           {
@@ -246,6 +253,7 @@ db.once('open', async () => {
         "currency": "USD",
         "currentLowestPrice": 10.07,
         "name": "FINAL FANTASY",
+        category: categories[3]._id,
         "releaseDate": "2021-07-28",
         "stores": [
           {
@@ -281,6 +289,7 @@ db.once('open', async () => {
         "currency": "USD",
         "currentLowestPrice": 43.29,
         "name": "Resident Evil 4",
+        category: categories[4]._id,
         "releaseDate": "2023-03-24",
         "stores": [
           {
@@ -316,6 +325,7 @@ db.once('open', async () => {
         "currency": "USD",
         "currentLowestPrice": 107.38,
         "name": "Overwatch",
+        category: categories[2]._id,
         "releaseDate": "2016-05-24",
         "stores": [
           {
@@ -351,6 +361,7 @@ db.once('open', async () => {
         "currency": "USD",
         "currentLowestPrice": 9.99,
         "name": "Left 4 Dead",
+        category: categories[4]._id,
         "releaseDate": "2008-11-17",
         "stores": [
           {
