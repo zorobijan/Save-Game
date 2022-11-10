@@ -8,6 +8,11 @@ const productSchema = new Schema({
     required: true,
     // trim: true
   },
+  category: {
+    type: Schema.Types.ObjectId,
+    ref: 'Category',
+    required: true
+  },
   currency: {
     type: String
   },
