@@ -13,7 +13,7 @@ const options = {
 };
 const search = async () =>
 
-fetch('https://game-prices.p.rapidapi.com/game/left-4-dead?region=us&type=game', options)
+fetch('https://game-prices.p.rapidapi.com/game/bioshock?region=us&type=game', options)
 	.then(response => response.json())
 	.then(response => console.log(response))
 	.catch(err => console.error(err));
