@@ -17,7 +17,7 @@ function App() {
     <div className="App">
       {loading ? (
 
-        <ClipLoader color={"#36d7b7"} loading={loading} size={100} />
+        <PacmanLoader color={"#FFFF00"} loading={loading} size={100} />
 
   ): (
 
