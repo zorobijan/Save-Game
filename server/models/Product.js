@@ -8,6 +8,9 @@ const productSchema = new Schema({
     required: true,
     // trim: true
   },
+  image: {
+    type: String
+  },
   category: {
     type: Schema.Types.ObjectId,
     ref: 'Category',
@@ -22,17 +25,10 @@ const productSchema = new Schema({
   ReleaseDate: {
     type: String,
   },
-  // quantity: {
-  //   type: Number,
-  //   min: 0,
-  //   default: 0
-  // },
+  currentLowestPrice: {
+    type: Number,
+  },
   stores: [{price: Number, seller: String, url: String }]
-  // category: {
-  //   type: Schema.Types.ObjectId,
-  //   ref: 'Category',
-  //   required: true
-  // }
 });
 
 const Product = mongoose.model('Product', productSchema);

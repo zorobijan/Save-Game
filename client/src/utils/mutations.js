@@ -18,9 +18,7 @@ export const ADD_ORDER = gql`
       products {
         _id
         name
-        description
-        price
-        quantity
+        currentLowestPrice
         category {
           name
         }
