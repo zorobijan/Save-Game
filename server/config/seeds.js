@@ -21,6 +21,8 @@ db.once('open', async () => {
         "currency": "USD",
         "currentLowestPrice": 20.84,
         "name": "Minecraft",
+        description:
+        'Minecraft is a video game in which players create and break apart various kinds of blocks in three-dimensional worlds. The games two main modes are Survival and Creative. In Survival, players must find their own building supplies and food. They also interact with blocklike mobs, or moving creatures.',
         image: 'minecraft.jpg',
         category: categories[4]._id,
         "releaseDate": "2009-05-17",
@@ -58,6 +60,8 @@ db.once('open', async () => {
         "currency": "USD",
         "currentLowestPrice": 25.64,
         "name": "God of War",
+        description:
+        'In God of War, players control Kratos, a Spartan warrior who is sent by the Greek gods to kill Ares, the god of war. As the story progresses, Kratos is revealed to be Ares former servant, who had been tricked into killing his own family and is haunted by terrible nightmares.',
         image: 'god-of-war.jpg',
         category: categories[0]._id,
         "releaseDate": "2022-01-14",
@@ -95,6 +99,8 @@ db.once('open', async () => {
         "currency": "USD",
         "currentLowestPrice": 9.99,
         "name": "METAL GEAR SOLID",
+        description:
+        'A crack government anti-terrorist squad takes over an obscure Alaskan nuclear disposal facility. Solid Snake is up for the task to infiltrate the facility, rescue the two hostages and thwart the terrorists plans.',
         image: 'metal-gear-solid.jpg',
         category: categories[0]._id,
         "releaseDate": "2000-09-25",
@@ -112,6 +118,8 @@ db.once('open', async () => {
         "currency": "USD",
         "currentLowestPrice": 19.99,
         "name": "Call of Duty",
+        description:
+        'Call of Duty is a 2003 first-person shooter game released on October 29, 2003. The game simulates infantry and combined arms warfare of World War II using a modified version of the id Tech 3 engine.',
         image: 'call-of-duty.jpg',
         category: categories[2]._id,
         "releaseDate": "2003-10-29",
@@ -149,6 +157,8 @@ db.once('open', async () => {
         "currency": "USD",
         "currentLowestPrice": 19.99,
         "name": "Need for Speed",
+        description:
+        'Need for Speed (NFS) is a racing game franchise. The series generally centers around illicit street racing and tasks players to complete various types of races while evading the local law enforcement in police pursuits.',
         image: 'need-for-speed.jpg',
         category: categories[1]._id,
         "releaseDate": "2016-03-15",
@@ -186,6 +196,8 @@ db.once('open', async () => {
         "currency": "USD",
         "currentLowestPrice": 7.45,
         "name": "Medal of Honor",
+        description:
+        'It is the first installment in the Medal of Honor video game series. The gameplay features the combined arms warfare of World War II, as the player completes various missions for the Office of Strategic Services.',
         image: 'medal-of-honor.jpg',
         category: categories[2]._id,
         "releaseDate": "2010-10-13",
@@ -223,6 +235,8 @@ db.once('open', async () => {
         "currency": "USD",
         "currentLowestPrice": 99.08,
         "name": "Grand Theft Auto",
+        description:
+        'In Grand Theft Auto gamers control criminals and attempt to increase their standing by completing missions in various virtual cities. The first game of the series offers a simple birds-eye perspective of the landscape from which the gamer could view and engage in carjacking, robberies, gun fights, and other forms of delinquency.',
         image: 'grand-theft-auto.jpg',
         category: categories[0]._id,
         "releaseDate": "1998-06-30",
@@ -260,6 +274,8 @@ db.once('open', async () => {
         "currency": "USD",
         "currentLowestPrice": 10.07,
         "name": "FINAL FANTASY",
+        description:
+        'Final Fantasy takes place in a fantasy world with three large continents. The elemental powers of this world are determined by the state of four crystals, each governing one of the four classical elements: earth, fire, water, and wind.',
         image: 'final-fantasy.jpg',
         category: categories[3]._id,
         "releaseDate": "2021-07-28",
@@ -297,6 +313,8 @@ db.once('open', async () => {
         "currency": "USD",
         "currentLowestPrice": 43.29,
         "name": "Resident Evil 4",
+        description:
+        'In Resident Evil 4, special agent Leon S. Kennedy is sent on a mission to rescue the U.S. Presidents daughter whos been kidnapped. Finding his way to a rural village in Europe, he faces new threats that are a departure from the traditional lumbering zombie enemies of the earlier instalments in the series.',
         image: 'resident-evil-4.jpg',
         category: categories[4]._id,
         "releaseDate": "2023-03-24",
@@ -334,6 +352,8 @@ db.once('open', async () => {
         "currency": "USD",
         "currentLowestPrice": 107.38,
         "name": "Overwatch",
+        description:
+        'Overwatch is a first-person multiplayer shooter, set in a future where a conflict between robots and humanity necessitated the creation of a task force, conveniently called "Overwatch." In the games primary competitive mode, players are arranged into 2 teams of 6 and compete on a variety of maps and game types.',
         image: 'overwatch.jpg',
         category: categories[2]._id,
         "releaseDate": "2016-05-24",
@@ -371,6 +391,8 @@ db.once('open', async () => {
         "currency": "USD",
         "currentLowestPrice": 9.99,
         "name": "Left 4 Dead",
+        description:
+        'Left 4 Dead is a first-person shooter in which the player takes control of one of four survivors; if human players are not available, the remaining survivors are filled by AI-controlled bots.',
         image: 'left-4-dead.jpg',
         category: categories[4]._id,
         "releaseDate": "2008-11-17",
@@ -408,6 +430,8 @@ db.once('open', async () => {
         "currency": "USD",
         "currentLowestPrice": 5.43,
         "name": "BioShock",
+        description:
+        'BioShock is a first-person shooter with role-playing game customization and stealth elements. The player takes the role of Jack as he is guided through Rapture towards various objectives. The player collects multiple weapons and plasmids as they work their way through enemy forces.',
         image: 'bioshock.jpg',
         category: categories[0]._id,
         "releaseDate": "2007-08-21",
