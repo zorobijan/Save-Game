@@ -77,7 +77,7 @@ function Signup(props) {
           />
         </div>
         <div className="flex-row flex-end">
-          <button type="submit">Submit</button>
+          <button class="button is-primary" type="submit">Submit</button>
         </div>
       </form>
     </div>
