@@ -20,7 +20,7 @@ const Home = () => {
       searchGame();
     }, []);
   return (
-    <div className="container">
+    <div class="content" className="container">
       <CategoryMenu />
       <ProductList />
       <Cart />
