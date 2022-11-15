@@ -13,7 +13,6 @@ function ProductItem(item) {
     name,
     _id,
     price,
-    quantity
   } = item;
 
   const { cart } = state

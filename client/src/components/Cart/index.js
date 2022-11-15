@@ -75,7 +75,7 @@ const Cart = () => {
       <div className="close" onClick={toggleCart}>
         [close]
       </div>
-      <h2>Shopping Cart</h2>
+      <h2 class="has-background-light">Shopping Cart</h2>
       {state.cart.length ? (
         <div>
           {state.cart.map((item) => (
