@@ -40,16 +40,18 @@ function ProductItem(item) {
   }
 
   return (
-    <div className="card px-1 py-1">
+    <div class="block" className="column is-one-quarter">
       <Link to={`/products/${_id}`}>
-        <img
+        <img class="image is-128x128"
           alt={name}
           src={`/images/${image}`}
         />
-        <p>{name}</p>
+        <div>
+        <p> {name}</p>
+        </div>
       </Link>
-      <div>
-        <span>${price}</span>
+      <div class="block">
+        <span class="tag is-dark is-centered">${price}</span>
       </div>
       <button class="button is-primary" onClick={addToCart}>Add to cart</button>
     </div>

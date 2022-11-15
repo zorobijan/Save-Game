@@ -20,7 +20,7 @@ const Home = () => {
       searchGame();
     }, []);
   return (
-    <div class="content" className="container">
+    <div class="content | has-background-light" className="container">
       <CategoryMenu />
       <ProductList />
       <Cart />

@@ -7,8 +7,8 @@ function Nav() {
   function showNavigation() {
     if (Auth.loggedIn()) {
       return (
-        <ul className="flex-row">
-          <li className="mx-1">
+        <ul class="has-background-light | container is-fluid | heading" className="flex-row">
+          <li class="color: is-primary" className="mx-1">
             <Link to="/orderHistory">
               Order History
             </Link>
@@ -23,28 +23,54 @@ function Nav() {
       );
     } else {
       return (
-        <ul className="flex-row">
-          <li className="mx-1">
-            <Link to="/signup">
-              Signup
-            </Link>
-          </li>
-          <li className="mx-1">
+        <div class="dropdown is-hoverable | container is-fluid">
+          <div class="dropdown-trigger">
+            <button class="button is-large | heading | color: is-primary | content" aria-haspopup="true" aria-controls="dropdown-menu">
+              <span>Signup/Login</span>
+              <span class="icon is-small">
+                <i class="fas fa-angle-down" aria-hidden="true"></i>
+              </span>
+            </button>
+          </div>
+          <div class="dropdown-menu" id="dropdown-menu" role="menu">
+            <div class="dropdown-content">
+              <a href="#" class="dropdown-item">
+                <Link to="/signup">
+                  signup
+                </Link>      </a>
+              <a class="dropdown-item">
+                <Link to="/login">
+                  Login
+                </Link>
+              </a>
+            </div>
+          </div>
+        </div>
+      /* // <div>
+      //   <ul class="content | has-background-light | container is-fluid" className="flex-row">
+      //     <li class="has-background-light | container is-fluid | content is-medium" className="mx-1">
+      //       <Link to="/signup">
+      //         Signup
+      //       </Link>
+      //     </li>
+      //     <li class="has-background-light | container is-fluid | content is-medium" className="mx-1">
             <Link to="/login">
               Login
             </Link>
-          </li>
-        </ul>
+      //     </li>
+      //   </ul>
+      // </div> */
       );
     }
   }
 
   return (
-    <header className="flex-row px-1">
-      <h1>
+    <header class="has-background-light | container is-fluid | block">
+      <h1 class="title | content is-large | has-background-light | level-item has-text-centered">
         <Link to="/">
-          <span role="img" aria-label="shopping bag">🛍️</span>
-          -Shop-Shop
+          <span class="has-background-light" role="img" aria-label="alien monster">👾</span>
+          V.V. Gaming Boutique
+          <span class="has-background-light" role="img" aria-label="alien monster">👾</span>
         </Link>
       </h1>
 
