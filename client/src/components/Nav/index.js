@@ -7,13 +7,13 @@ function Nav() {
   function showNavigation() {
     if (Auth.loggedIn()) {
       return (
-        <ul class="has-background-light | container is-fluid | heading" className="flex-row">
+        <ul class="has-background-light | container is-fluid | heading">
           <li class="color: is-primary" className="mx-1">
             <Link to="/orderHistory">
               Order History
             </Link>
           </li>
-          <li className="mx-1">
+          <li>
             {/* this is not using the Link component to logout or user and then refresh the application to the start */}
             <a href="/" onClick={() => Auth.logout()}>
               Logout
@@ -34,11 +34,11 @@ function Nav() {
           </div>
           <div class="dropdown-menu" id="dropdown-menu" role="menu">
             <div class="dropdown-content">
-              <a href="#" class="dropdown-item">
+              <a href="#" class="dropdown-item | tag is-warning">
                 <Link to="/signup">
-                  signup
+                  Signup
                 </Link>      </a>
-              <a class="dropdown-item">
+              <a class="dropdown-item | tag is-warning">
                 <Link to="/login">
                   Login
                 </Link>

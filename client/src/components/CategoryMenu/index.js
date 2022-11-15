@@ -42,10 +42,10 @@ function CategoryMenu() {
   };
 
   return (
-    <div class="has-background-light | content is-normal">
+    <div class="has-background-light | content is-normal" style={{display: "flex", justifyContent: "space-around", padding: "20px"}}>
       <h2 class="block | level-item has-text-centered">Choose a Genre</h2>
       {categories.map((item) => (
-        <div class="buttons is-centered">
+       
           <button class="button is-primary"
             key={item._id}
             onClick={() => {
@@ -54,7 +54,7 @@ function CategoryMenu() {
           >
             {item.name}
           </button>
-        </div>
+      
       ))}
     </div>
   );
