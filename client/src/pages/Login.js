@@ -30,7 +30,7 @@ function Login(props) {
   };
 
   return (
-    <div class="content" className="container my-1">
+    <div class="content | container is-fluid | has-background-light | box" className="container my-1">
       <Link to="/signup">← Go to Signup</Link>
 
       <h2>Login</h2>

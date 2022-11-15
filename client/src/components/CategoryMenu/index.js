@@ -42,17 +42,19 @@ function CategoryMenu() {
   };
 
   return (
-    <div>
-      <h2>Choose a Category:</h2>
+    <div class="has-background-light | content is-normal">
+      <h2 class="block | level-item has-text-centered">Choose a Genre</h2>
       {categories.map((item) => (
-        <button class="button is-primary"
-          key={item._id}
-          onClick={() => {
-            handleClick(item._id);
-          }}
-        >
-          {item.name}
-        </button>
+        <div class="buttons is-centered">
+          <button class="button is-primary"
+            key={item._id}
+            onClick={() => {
+              handleClick(item._id);
+            }}
+          >
+            {item.name}
+          </button>
+        </div>
       ))}
     </div>
   );

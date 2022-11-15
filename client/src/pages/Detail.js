@@ -85,14 +85,16 @@ function Detail() {
     <>
       {currentProduct && cart ? (
         <div className="container my-1">
-          <Link to="/">← Back to Products</Link>
-
-          <h2>{currentProduct.name}</h2>
-
-          <p>{currentProduct.description}</p>
-
-          <p>
-            <strong>Price:</strong>${currentProduct.currentLowestPrice}{' '}
+          <div class="content is-normal">
+          <Link class="tag is-dark"to="/">← Back to Products</Link>
+          </div>
+          <section class="hero is-small is-primary">
+            <h2 class="title">{currentProduct.name}</h2>
+            <p class="subtitle">{currentProduct.description}</p>
+          </section>
+          <p class="has-background-light">
+            <strong class="tag is-dark | content is-normal">Price:</strong>${currentProduct.currentLowestPrice}{' '}
+            <div>
             <button class="button is-primary" onClick={addToCart}>Add to Cart</button>
             <button
               class="button is-primary" disabled={!cart.find((p) => p._id === currentProduct._id)}
@@ -100,9 +102,10 @@ function Detail() {
             >
               Remove from Cart
             </button>
+            </div>
           </p>
-
           <img
+            class="image is-128x128"
             src={`/images/${currentProduct.image}`}
             alt={currentProduct.name}
           />

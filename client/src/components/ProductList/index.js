@@ -44,25 +44,26 @@ function ProductList() {
   }
 
   return (
-    <div className="my-2">
-      <h2>Our Products:</h2>
-      {state.products.length ? (
-        <div className="flex-row">
-          {filterProducts().map((product) => (
-            <ProductItem
-              key={product._id}
-              _id={product._id}
-              image={product.image}
-              name={product.name}
-              price={product.currentLowestPrice}
-            />
-          ))}
-        </div>
-      ) : (
-        <h3>You haven't added any products yet!</h3>
-      )}
-      {loading ? <img src={spinner} alt="loading" /> : null}
-    </div>
+    <div class="container | has-background-light | content is-normal | block">
+        <h2 class="content | level-item has-text-centered">Current Inventory</h2>
+        {state.products.length ? (
+          <div className="columns is-multiline">
+            {filterProducts().map((product) => (
+              <ProductItem
+                key={product._id}
+                _id={product._id}
+                image={product.image}
+                name={product.name}
+                price={product.currentLowestPrice}
+              />
+            ))}
+          </div>
+
+        ) : (
+          <h3 class="content is-normal">You haven't added any products yet!</h3>
+        )}
+        {loading ? <img src={spinner} alt="loading" /> : null}
+      </div>
   );
 }
 
